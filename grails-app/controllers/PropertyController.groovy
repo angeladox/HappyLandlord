@@ -1,4 +1,4 @@
-package realestaterentalfun
+package happylandlord
 
 class PropertyController {
 
