@@ -14,6 +14,7 @@ class Tenant {
     lastName(blank:false)
     DOB()
     email(email:true)
+    //regex for telephone number - must be unique. 
     phone(blank:false, unique:true, matches:/^\([1-9]\d{2}\)\s?\d{3}\-\d{4}$/)
     
     
