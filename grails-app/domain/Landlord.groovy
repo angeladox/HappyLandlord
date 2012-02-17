@@ -11,6 +11,7 @@ class Landlord {
 	Date dateCreated
 
     static constraints = {
+   // right now the constraints are empty!!!
     }
 	
 	static hasMany = [properties:Property, units:Unit] 
