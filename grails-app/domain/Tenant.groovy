@@ -7,7 +7,7 @@ class Tenant {
     Date DOB
     String email
     String phone
-    String creditScore
+    int creditScore
     // tenant last address info
     String prevAddress
     String prevLandlord
@@ -29,7 +29,7 @@ class Tenant {
     email(email:true,unique:true)
     //regex for telephone number - must be unique. 
     phone(blank:false, unique:true, matches:/^\([1-9]\d{2}\)\s?\d{3}\-\d{4}$/)
-    creditScore(inList:["800","700","600","500","400"])
+    creditScore(inList:[800,700,600,500,400,300,200])
     prevLandlord(blank:true)
     prevAddress(blank:true, maxSize:100)
     prevLandlordPhone(blank:true, unique:true, matches:/^\([1-9]\d{2}\)\s?\d{3}\-\d{4}$/)
